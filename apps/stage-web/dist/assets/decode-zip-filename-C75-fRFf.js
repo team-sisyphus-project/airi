@@ -1,0 +1,2 @@
+function e(e){if(Array.isArray(e))return e.join(``);if(e.every(e=>e<128))return new TextDecoder(`utf-8`).decode(e);try{return new TextDecoder(`gbk`).decode(e)}catch{return new TextDecoder(`utf-8`).decode(e)}}export{e as t};
+//# sourceMappingURL=decode-zip-filename-C75-fRFf.js.map

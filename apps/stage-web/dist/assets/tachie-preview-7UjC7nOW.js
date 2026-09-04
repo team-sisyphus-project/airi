@@ -1,0 +1,1 @@
+import{t as e}from"./tachie-preview-BjK8bKp-.js";export{e as loadTachieModelPreview};

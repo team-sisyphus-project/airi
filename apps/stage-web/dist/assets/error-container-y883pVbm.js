@@ -1,0 +1,2 @@
+import{E as e,_ as t,k as n,mt as r,qt as i,tr as a,v as o,w as s}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{Q as c}from"./auxiliary-BBweYuLG.js";var l={class:`whitespace-pre-wrap break-all`},u=n({__name:`error-container`,props:{title:{},error:{}},setup(n){return(u,d)=>(r(),o(c,{type:`error`},s({title:i(()=>[e(a(n.title),1)]),_:2},[n.error?{name:`content`,fn:i(()=>[t(`pre`,l,a(String(n.error)),1)]),key:`0`}:void 0]),1024))}});export{u as t};
+//# sourceMappingURL=error-container-y883pVbm.js.map

@@ -1,0 +1,2 @@
+import{n as e}from"./pinia-BxhEHdqI.js";import{P as t}from"./auxiliary-DMHjaKeH.js";import{t as n}from"./chat-CJ9ddlOn.js";var r=e(`chat-maintenance`,()=>{let e=t(),r=n();function i(t=e.activeSessionId){return r.cleanup(t)}return{cleanupMessages:i}});export{r as t};
+//# sourceMappingURL=maintenance-CFcysWCE.js.map

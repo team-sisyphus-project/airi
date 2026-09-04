@@ -1,0 +1,2 @@
+var e=function(e){return e.Web=`web`,e.Capacitor=`capacitor`,e.Tamagotchi=`tamagotchi`,e}({});function t(){return!0}function n(){return!1}function r(){return!1}function i(){return r()?`tamagotchi`:n()?`capacitor`:`web`}export{t as a,r as i,i as n,n as r,e as t};
+//# sourceMappingURL=environment-Dk5-uxoS.js.map

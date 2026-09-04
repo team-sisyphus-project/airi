@@ -1,0 +1,2 @@
+import{k as e,mt as t,v as n}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{$t as r,Jt as i}from"./auxiliary-DMHjaKeH.js";import{h as a}from"./useApi-CROJJdhE-kIDf-bTU.js";import{t as o}from"./account-settings-page-C2HWl30A.js";import{t as s}from"./route-block-ChiJXsfH.js";var c=e({__name:`index`,setup(e){let s=i(),c=a();function l(){s.needsLogin=!0}async function u(){await r(),c.push(`/settings`)}return(e,r)=>(t(),n(o,{onLogin:l,onLogout:u}))}});typeof s==`function`&&s(c);var l=c;export{l as default};
+//# sourceMappingURL=account-DGVec-b4.js.map

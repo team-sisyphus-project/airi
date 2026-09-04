@@ -1,0 +1,2 @@
+import{n as e,t}from"./duckdb-mvp-Ctvh-xbI.js";var n=`/assets/duckdb-browser-eh.worker-B2xnDV1H.js`,r=`/assets/duckdb-browser-mvp.worker-DCs3_EjR.js`,i=`/assets/duckdb-coi-CSr8FQO4.wasm`,a=`/assets/duckdb-browser-coi.worker-Ji2I_m5s.js`,o=`/assets/duckdb-browser-coi.pthread.worker-WD1J30pV.js`;function s(){return{mvp:{mainModule:t,mainWorker:r},eh:{mainModule:e,mainWorker:n},coi:{mainModule:i,mainWorker:a,pthreadWorker:o}}}export{s as t};
+//# sourceMappingURL=import-url-browser-B5kZJdF4.js.map

@@ -1,0 +1,2 @@
+import{J as e}from"./runtime-core.esm-bundler-B4b-2GOK.js";var t=Symbol(`hearing-provider-view-context`);function n(){let n=e(t);if(!n)throw Error(`The Provider view must be rendered inside the Hearing module.`);return n}export{n,t};
+//# sourceMappingURL=hearing-view-DWTVvuD8.js.map

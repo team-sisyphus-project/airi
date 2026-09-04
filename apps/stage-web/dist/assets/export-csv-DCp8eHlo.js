@@ -1,0 +1,3 @@
+function e(e){return`"${String(e).replace(/"/g,`""`)}"`}function t(t){return t.map(t=>t.map(e).join(`,`)).join(`
+`)}function n(e,n){if(!e.length)return;if(typeof Blob>`u`||typeof document>`u`||typeof URL>`u`){console.warn(`[CSV] Export is only supported in browser environments`);return}let r=t(e),i=new Blob([r],{type:`text/csv;charset=utf-8;`}),a=URL.createObjectURL(i),o=document.createElement(`a`);o.href=a,o.download=`${n}-${Date.now()}.csv`,o.click(),URL.revokeObjectURL(a)}export{n as t};
+//# sourceMappingURL=export-csv-DCp8eHlo.js.map

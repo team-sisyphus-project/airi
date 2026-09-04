@@ -1,0 +1,2 @@
+import{t as e}from"./preload-helper-Czpn1I53.js";import{i as t}from"./index-DoHiaFQM-CWccDSA1.js";var n=async()=>{let{toJsonSchema:n}=await t(e(()=>import(`./dist-Bf3V1dr4.js`),[]),`@valibot/to-json-schema`);return e=>n(e)};export{n as getToJsonSchemaFn};
+//# sourceMappingURL=valibot-_ibN3zSD-h062OMOr.js.map

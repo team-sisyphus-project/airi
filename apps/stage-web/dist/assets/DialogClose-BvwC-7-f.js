@@ -1,0 +1,2 @@
+import{On as e,et as t,k as n,mt as r,qt as i,v as a,xt as o}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{T as s,k as c}from"./src-DtH-vjoa.js";import{s as l}from"./DialogTitle-Bny6NGJq.js";var u=n({__name:`DialogClose`,props:{asChild:{type:Boolean,required:!1},as:{type:null,required:!1,default:`button`}},setup(n){let u=n;c();let d=l();return(n,c)=>(r(),a(e(s),t(u,{type:n.as===`button`?`button`:void 0,onClick:c[0]||=t=>e(d).onOpenChange(!1)}),{default:i(()=>[o(n.$slots,`default`)]),_:3},16,[`type`]))}});export{u as t};
+//# sourceMappingURL=DialogClose-BvwC-7-f.js.map

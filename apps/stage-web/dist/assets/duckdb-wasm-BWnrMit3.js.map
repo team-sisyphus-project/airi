@@ -1,0 +1,1 @@
+{"version":3,"file":"duckdb-wasm-BWnrMit3.js","names":[],"sources":["../../__vite-optional-peer-dep:web-worker:@proj-airi/duckdb-wasm"],"sourcesContent":["export default {};\nthrow new Error(`Could not resolve \"web-worker\" imported by \"@proj-airi/duckdb-wasm\". Is it installed?`)"],"mappings":"AAAA,IAAA,EAAe,CAAC,EAChB,MAAU,MAAM,uFAAuF"}

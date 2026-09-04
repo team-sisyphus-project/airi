@@ -1,0 +1,2 @@
+import{b as e,mt as t}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{t as n}from"./_plugin-vue_export-helper-BDNMzG2s.js";var r={};function i(n,r){return t(),e(`div`,null,` Settings `)}var a=n(r,[[`render`,i]]);export{a as default};
+//# sourceMappingURL=settings-4eqPBMNu.js.map

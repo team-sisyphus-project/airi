@@ -1,0 +1,2 @@
+import{Cn as e,Ht as t,On as n}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{D as r,nt as i}from"./dist-CsmGQGl-.js";function a(a,o,s){let c=n(o),l=r(a,c,s),u=i(l),{resume:d,pause:f}=t(u,e=>l.value=e,s);return s?.listenToStorageChanges!==!1&&t(l,t=>{e(t)!==e(u.value)&&(f(),u.value=t,d())},s),u}export{a as t};
+//# sourceMappingURL=use-local-storage-manual-reset-CLaDcmcs.js.map

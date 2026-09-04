@@ -1,0 +1,2 @@
+import{t as e}from"./preload-helper-Czpn1I53.js";import{i as t}from"./index-DoHiaFQM-CWccDSA1.js";var n=async()=>{let{JSONSchema:n}=await t(e(()=>import(`./__vite-optional-peer-dep_effect_xsschema-Bm4IHOTO.js`),[]),`effect`);return e=>n.make(e)};export{n as getToJsonSchemaFn};
+//# sourceMappingURL=effect-Df2gY8Wx-DBg5mbPK.js.map

@@ -1,0 +1,2 @@
+var e=e=>e==null?!1:e instanceof Error||typeof e==`object`&&`name`in e&&typeof e.name==`string`&&`message`in e&&typeof e.message==`string`,t=t=>e(t)?t.name:void 0,n=t=>e(t)?t.message:void 0,r=t=>e(t)?t.stack??Error(n(t)).stack:void 0,i=t=>{if(!(!e(t)||t.cause==null))return t.cause};export{r as i,n,t as r,i as t};
+//# sourceMappingURL=error-BnwLhD07.js.map

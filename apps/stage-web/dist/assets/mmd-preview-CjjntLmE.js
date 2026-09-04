@@ -1,0 +1,1 @@
+import{t as e}from"./mmd-preview-GJMUiiEy.js";export{e as loadMMDModelPreview};

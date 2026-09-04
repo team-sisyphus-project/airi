@@ -1,0 +1,2 @@
+import{n as e,t}from"./duckdb-mvp-Ctvh-xbI.js";var n=`/assets/duckdb-node-eh.worker-JckteRwc.cjs`,r=`/assets/duckdb-node-mvp.worker-GMEh9yNX.cjs`;function i(e){return e.startsWith(`/@fs/`)?e.replace(`/@fs/`,`file://`):e}async function a(){return{mvp:{mainModule:i(t),mainWorker:i(r)},eh:{mainModule:i(e),mainWorker:i(n)}}}export{a as getImportUrlBundles};
+//# sourceMappingURL=import-url-node-8BBI83n7.js.map

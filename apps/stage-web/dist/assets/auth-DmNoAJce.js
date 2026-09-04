@@ -1,0 +1,2 @@
+import{On as e,k as t,mt as n,v as r}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{n as i}from"./vue-router-Dj4f2tQu.js";import{t as a}from"./route-block-ChiJXsfH.js";var o=t({__name:`index`,setup(t){return(t,a)=>(n(),r(e(i)))}});typeof a==`function`&&a(o);var s=o;export{s as default};
+//# sourceMappingURL=auth-DmNoAJce.js.map

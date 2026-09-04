@@ -1,0 +1,7 @@
+# Autosquad preview manifest. See conventions/preview-toml.md.
+# The web app (apps/stage-web) is a Vite static build committed under apps/stage-web/dist,
+# so the preview serves it as-is (no workspace install or build on the platform).
+model = "static"
+
+[serve]
+static_dir = "apps/stage-web/dist"

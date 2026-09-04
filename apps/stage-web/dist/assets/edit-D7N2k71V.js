@@ -1,0 +1,2 @@
+import{On as e,k as t,mt as n,v as r}from"./runtime-core.esm-bundler-B4b-2GOK.js";import{n as i}from"./vue-router-Dj4f2tQu.js";var a=t({__name:`edit`,setup(t){return(t,a)=>(n(),r(e(i)))}});export{a as default};
+//# sourceMappingURL=edit-D7N2k71V.js.map

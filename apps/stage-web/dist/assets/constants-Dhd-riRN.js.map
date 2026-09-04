@@ -1,0 +1,1 @@
+{"version":3,"file":"constants-Dhd-riRN.js","names":[],"sources":["../../../../packages/stage-ui/src/constants/index.ts"],"sourcesContent":["export const llmInferenceEndToken = '<|llm_inference_end|>'\n\nexport * from './emotions'\nexport * from './inject'\nexport * from './prompts/system-v2'\nexport * from './theme'\n"],"mappings":"gCAAA,IAAa,EAAuB"}

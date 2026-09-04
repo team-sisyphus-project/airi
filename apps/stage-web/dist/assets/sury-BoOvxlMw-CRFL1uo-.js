@@ -1,0 +1,2 @@
+import{t as e}from"./preload-helper-Czpn1I53.js";import{i as t}from"./index-DoHiaFQM-CWccDSA1.js";var n=async()=>{let{toJSONSchema:n}=await t(e(()=>import(`./__vite-optional-peer-dep_sury_xsschema-C53Kgyu-.js`),[]),`sury`);return e=>n(e)};export{n as getToJsonSchemaFn};
+//# sourceMappingURL=sury-BoOvxlMw-CRFL1uo-.js.map
