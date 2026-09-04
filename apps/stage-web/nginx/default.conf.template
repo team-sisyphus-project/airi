@@ -1,0 +1,21 @@
+server {
+    # $PORT is a real environment variable, substituted by the nginx
+    # image's docker-entrypoint.sh (20-envsubst-on-templates.sh) at
+    # container start. $uri/$host below are nginx variables, not shell
+    # env vars, so envsubst leaves them untouched.
+    listen       ${PORT};
+    listen       [::]:${PORT};
+    server_name  _;
+
+    root   /usr/share/nginx/html;
+    index  index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+}
