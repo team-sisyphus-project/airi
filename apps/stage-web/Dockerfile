@@ -26,6 +26,8 @@ FROM nginx:1.27-alpine AS production-stage
 COPY --from=build-stage /app/apps/stage-web/dist /usr/share/nginx/html
 COPY apps/stage-web/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY apps/stage-web/nginx/default.conf.template /etc/nginx/templates/default.conf.template
+COPY apps/stage-web/nginx/docker-entrypoint-wrapper.sh /docker-entrypoint-wrapper.sh
+RUN chmod +x /docker-entrypoint-wrapper.sh
 
 # NOTICE:
 # Rendered config output dir must be writable at container start (the
@@ -43,4 +45,5 @@ RUN chown -R nginx:nginx /usr/share/nginx/html
 
 USER nginx
 
+ENTRYPOINT ["/docker-entrypoint-wrapper.sh"]
 CMD ["nginx", "-g", "daemon off;"]
