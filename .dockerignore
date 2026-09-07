@@ -5,3 +5,6 @@
 **/.env.*
 !**/.env.example
 target
+
+# 게시는 커밋된 정적 빌드를 그대로 서빙한다 — stage-web dist는 이미지에 포함.
+!apps/stage-web/dist
