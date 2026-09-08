@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AboutBuildInfo, AboutLink } from './types'
+import type { AboutBuildInfo, AboutLink, AboutQuickStartStep } from './types'
 
 import { computed } from 'vue'
 
@@ -7,6 +7,10 @@ const props = withDefaults(defineProps<{
   title?: string
   highlight?: string
   subtitle?: string
+  /** Optional paragraph describing the project's purpose and scope shown beneath the title. */
+  description?: string
+  /** Optional ordered list of onboarding steps rendered above the links section. */
+  quickStart?: AboutQuickStartStep[]
   buildInfo?: AboutBuildInfo
   links?: AboutLink[]
 }>(), {
@@ -40,6 +44,18 @@ const hasBuildInfo = computed(() => {
         {{ subtitle }}
       </div>
     </div>
+
+    <p
+      v-if="description"
+      :class="[
+        'mb-10',
+        'text-center text-sm leading-relaxed',
+        'text-neutral-600 dark:text-neutral-400',
+        'max-w-prose mx-auto',
+      ]"
+    >
+      {{ description }}
+    </p>
 
     <slot name="before-build-info" />
 
@@ -84,6 +100,47 @@ const hasBuildInfo = computed(() => {
     </div>
 
     <slot name="after-build-info" />
+
+    <div v-if="quickStart && quickStart.length > 0" :class="['mb-10']">
+      <div :class="['text-neutral-500 dark:text-neutral-400']">
+        Getting started
+      </div>
+      <ol :class="['mt-4 flex flex-col gap-3']">
+        <li
+          v-for="(step, index) in quickStart"
+          :key="step.title"
+          :class="[
+            'flex items-start gap-3',
+            'rounded-xl',
+            'px-3 py-3',
+            'lg:px-5 lg:py-4',
+            'text-sm md:text-base',
+            'bg-black/4 dark:bg-black/10',
+          ]"
+        >
+          <!-- Step number badge -->
+          <span
+            :class="[
+              'mt-0.5 shrink-0',
+              'flex items-center justify-center',
+              'h-6 w-6 rounded-full',
+              'text-xs font-semibold',
+              'bg-pink-100 text-pink-600',
+              'dark:bg-pink-900/40 dark:text-pink-300',
+            ]"
+          >{{ index + 1 }}</span>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center gap-2">
+              <div v-if="step.icon" :class="[step.icon, 'shrink-0 text-neutral-500 dark:text-neutral-400']" />
+              <span class="font-medium text-slate-700 dark:text-slate-100">{{ step.title }}</span>
+            </div>
+            <p class="mt-1 text-neutral-500 dark:text-neutral-400">
+              {{ step.body }}
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
 
     <div :class="['my-10']">
       <div :class="['text-neutral-500 dark:text-neutral-400']">
